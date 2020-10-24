@@ -1,0 +1,294 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+
+/*
+=================================
+Custom Styles
+=================================
+*/
+:root{
+--bg-color: #f7e1d7;
+}
+
+body {
+    background: var(--bg-color);
+    font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-Serif;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+header {
+  background: #edafb8;
+  width: 100%;
+}
+
+footer {
+  background: #edafb8;
+}
+
+
+
+/*
+===============================
+HOME
+===============================
+*/
+
+.hero {
+  line-height: 44px;
+  padding: 22px 80px 22px 80px;
+  text-align: center;
+}
+
+
+/*
+=================================
+Links
+=================================
+*/
+
+
+a {
+    color: #020122;
+    text-decoration: none;
+}
+
+.primary-header a,
+.primary-footer a {
+  color: #020122;
+}
+
+.primary-header a:hover,
+.primary-footer a:hover {
+  color: #b177e0;
+}
+
+
+
+/*
+=================================
+GRID
+=================================
+*/
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+      box-sizing: border-box;
+}
+
+.container,
+.grid {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.grid h5 {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+}
+
+.container {
+
+  padding-left: 30px;
+  padding-right: 30px;
+  
+}
+
+
+.col-1-3 {
+    width: 33.33%;
+}
+
+.col-2-3 {
+    width: 66.2%;
+}
+
+.col-1-3 ,
+.col-2-3 {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.grid,
+.col-1-3,
+.col-2-3 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+img {
+  border-radius: 5px;
+  display: block;
+  margin-bottom: 22px;
+  height: 100%;
+}
+
+
+
+
+/*
+==============================
+Rows
+==============================
+*/
+
+.row,
+.row-alt {
+  min-width: 960;
+}
+
+.row {
+    background: #ffffff;
+    padding: 20px 0 20px 0;
+  }
+
+
+/*
+=================================
+clear fix (for floating items)
+=================================
+*/
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
+
+
+/*
+===============================
+Primary Header
+===============================
+*/
+
+.logo {
+  float: left;
+  padding: 0 0 20px 0;
+  margin-top: 10px;
+
+  border-top: 4px solid #b177e0;
+  font-size: 48px;
+  font-weight: 100;
+  letter-spacing: .5px;
+  line-height: 44px;
+  text-transform: uppercase;
+}
+
+.primary-nav {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+}
+
+/*
+===============================
+Navigation
+===============================
+*/
+
+.nav {
+  text-align: right;
+  margin-top: 70px;
+  vertical-align: middle;
+}
+
+.nav li {
+  display: inline-block;
+  margin: 0 10px;
+  vertical-align: top;
+}
+.nav li:last-child {
+  margin-right: 0;
+}
+
+/*
+===============================
+Home
+===============================
+*/
+
+.hero {
+  color: #020122;
+  line-height: 44px;
+  padding: 22px 80px 66px 80px;
+  text-align: center;
+}
+.hero h2 {
+  font-size: 36px;
+}
+.hero p {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+
+
+
+
