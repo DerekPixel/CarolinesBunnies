@@ -291,6 +291,10 @@ Navigation
   border-bottom: none;
 }
 
+footer small {
+  float: left;
+}
+
 /*
 ===============================
 Home
